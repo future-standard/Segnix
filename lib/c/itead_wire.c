@@ -79,7 +79,7 @@ static I2C_DEVICE i2c_devices[] = {
 		.fd	  = -1,
 		.node = "/dev/i2c-2" ,
 	},
-#elif defined (BOARD_RASPBERRY_PI_RV2) || defined(BOARD_RASPBERRY_PI_MODEL_BPLUS)
+#elif defined (BOARD_RASPBERRY_PI_RV2) || defined(BOARD_RASPBERRY_PI_MODEL_BPLUS) || defined(BOARD_RASPBERRY_PI_3_MODEL_B)
     [1] = {
 		.fd	  = -1,
 		.node = "/dev/i2c-1" ,

@@ -594,7 +594,7 @@ uint32_t digitalWrite(uint16_t pin, uint8_t val)
 	} else if (val == LOW) {
 		CUREG &= ~(1 << index);
 	}
-#elif defined(BOARD_RASPBERRY_PI_RV2) || defined(BOARD_RASPBERRY_PI_MODEL_BPLUS)
+#elif defined(BOARD_RASPBERRY_PI_RV2) || defined(BOARD_RASPBERRY_PI_MODEL_BPLUS) || defined(BOARD_RASPBERRY_PI_3_MODEL_B)
     pin   = pnp[pin].index;
     if( val == HIGH) {
         cureg = gpio_base + GPIO_GPSET_OFFSET/4 + pin/32;
@@ -699,7 +699,7 @@ uint32_t digitalRead(uint16_t pin)
 		+ port_no*0x24 + 4*4);
 
 	return (CUREG & (1<<index)) ? HIGH : LOW;
-#elif defined(BOARD_RASPBERRY_PI_RV2) || defined(BOARD_RASPBERRY_PI_MODEL_BPLUS)
+#elif defined(BOARD_RASPBERRY_PI_RV2) || defined(BOARD_RASPBERRY_PI_MODEL_BPLUS) || defined(BOARD_RASPBERRY_PI_3_MODEL_B)
     pin   = pnp[pin].index;
     cureg = gpio_base + GPIO_GPLEV_OFFSET/4 + pin/32;
     return (CUREG & (0x1<<(pin%32))) ? HIGH : LOW;

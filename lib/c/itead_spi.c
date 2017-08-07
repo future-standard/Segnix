@@ -51,7 +51,7 @@ static SPI_DEVICE spi_devices[] = {
    [0] = {
 		.node	= "/dev/spidev0.0",
 	},
-#elif defined (BOARD_RASPBERRY_PI_RV2) || defined(BOARD_RASPBERRY_PI_MODEL_BPLUS)
+#elif defined (BOARD_RASPBERRY_PI_RV2) || defined(BOARD_RASPBERRY_PI_MODEL_BPLUS) || defined(BOARD_RASPBERRY_PI_3_MODEL_B)
    [0] = {
 		.node	= "/dev/spidev0.0",
 	},

@@ -134,7 +134,7 @@ extern SPIClass & SPI;
 
 #if defined(BOARD_ITEADUINO_PLUS) || defined (BOARD_ITEAD_CORE_EVB)
 extern SPIClass SPI0;
-#elif defined (BOARD_RASPBERRY_PI_RV2) || defined(BOARD_RASPBERRY_PI_MODEL_BPLUS)
+#elif defined (BOARD_RASPBERRY_PI_RV2) || defined(BOARD_RASPBERRY_PI_MODEL_BPLUS) || defined(BOARD_RASPBERRY_PI_3_MODEL_B)
 extern SPIClass SPI0;
 #elif defined (BOARD_BEAGLEBONEBLACK)
 extern SPIClass SPI1;

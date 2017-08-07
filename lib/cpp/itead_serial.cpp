@@ -26,7 +26,7 @@ Serial_ & Serial = Serial4;
 #elif defined (BOARD_ITEAD_CORE_EVB)
 Serial_ Serial4(DEV_UART4);
 Serial_ & Serial = Serial4;
-#elif defined (BOARD_RASPBERRY_PI_RV2) || defined(BOARD_RASPBERRY_PI_MODEL_BPLUS)
+#elif defined (BOARD_RASPBERRY_PI_RV2) || defined(BOARD_RASPBERRY_PI_MODEL_BPLUS) || defined(BOARD_RASPBERRY_PI_3_MODEL_B)
 Serial_ Serial0(DEV_UART0);
 Serial_ & Serial = Serial0;
 #elif defined (BOARD_BEAGLEBONEBLACK)

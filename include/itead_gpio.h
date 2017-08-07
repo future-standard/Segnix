@@ -552,7 +552,7 @@ typedef struct
 #define PB2     (62)
 #define PH27    (63)
 
-#elif defined (BOARD_RASPBERRY_PI_RV2) || defined(BOARD_RASPBERRY_PI_MODEL_BPLUS)
+#elif defined (BOARD_RASPBERRY_PI_RV2) || defined(BOARD_RASPBERRY_PI_MODEL_BPLUS) || defined(BOARD_RASPBERRY_PI_3_MODEL_B)
 
 #define GPIO2       3 
 #define GPIO3       5 
@@ -571,7 +571,7 @@ typedef struct
 #define GPIO11      23
 #define GPIO8       24
 #define GPIO7       26
-#if defined(BOARD_RASPBERRY_PI_RV2)
+#if defined(BOARD_RASPBERRY_PI_RV2) || defined(BOARD_RASPBERRY_PI_3_MODEL_B)
 #define GPIO28      29
 #define GPIO29      30
 #define GPIO30      31

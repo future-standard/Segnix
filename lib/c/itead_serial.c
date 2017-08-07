@@ -63,6 +63,11 @@ static SERIAL_PORT ports[] = {
 		.fd = -1,
 		.node = "/dev/ttyAMA0",
 	},
+#elif defined (BOARD_RASPBERRY_PI_3_MODEL_B)
+    [0] = {
+		.fd = -1,
+		.node = "/dev/ttyS0",
+	},
 #elif defined (BOARD_BEAGLEBONEBLACK)
     [1] = {
 		.fd = -1,
@@ -88,7 +93,7 @@ static uint32_t valid_dev[] = {
     DEV_UART7,
 #elif defined(BOARD_ITEAD_CORE_EVB)    
     DEV_UART4,
-#elif defined (BOARD_RASPBERRY_PI_RV2) || defined(BOARD_RASPBERRY_PI_MODEL_BPLUS)
+#elif defined (BOARD_RASPBERRY_PI_RV2) || defined(BOARD_RASPBERRY_PI_MODEL_BPLUS) || defined(BOARD_RASPBERRY_PI_3_MODEL_B)
     DEV_UART0,
 #elif defined (BOARD_BEAGLEBONEBLACK)
     DEV_UART1,

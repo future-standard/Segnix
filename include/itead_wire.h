@@ -90,7 +90,7 @@ extern TwoWire & Wire;
 extern TwoWire Wire1;
 extern TwoWire Wire2;
 
-#elif defined (BOARD_RASPBERRY_PI_RV2) || defined(BOARD_RASPBERRY_PI_MODEL_BPLUS)
+#elif defined (BOARD_RASPBERRY_PI_RV2) || defined(BOARD_RASPBERRY_PI_MODEL_BPLUS) || defined(BOARD_RASPBERRY_PI_3_MODEL_B)
 extern TwoWire Wire1;
 
 #elif defined (BOARD_BEAGLEBONEBLACK)

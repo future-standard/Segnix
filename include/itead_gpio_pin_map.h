@@ -276,9 +276,9 @@ static const pin_no_port_index_map pnp[] = {
 #endif
 };
 
-#elif defined(BOARD_RASPBERRY_PI_RV2) || defined(BOARD_RASPBERRY_PI_MODEL_BPLUS)
+#elif defined(BOARD_RASPBERRY_PI_RV2) || defined(BOARD_RASPBERRY_PI_MODEL_BPLUS) || defined(BOARD_RASPBERRY_PI_3_MODEL_B)
 
-#if defined(BOARD_RASPBERRY_PI_RV2)
+#if defined(BOARD_RASPBERRY_PI_RV2) || defined(BOARD_RASPBERRY_PI_3_MODEL_B)
 #define PIN_MAX		32
 #elif defined(BOARD_RASPBERRY_PI_MODEL_BPLUS)
 #define PIN_MAX		35
@@ -324,7 +324,7 @@ static const pin_no_port_index_map pnp[] = {
 	{PORT_GPIO,	8}	,	// 4
 	{PORT_NONE,	INDEX_NONE}	,	// 5
 	{PORT_GPIO,	7}	,	// 6
-#if defined(BOARD_RASPBERRY_PI_RV2)	
+#if defined(BOARD_RASPBERRY_PI_RV2) || defined(BOARD_RASPBERRY_PI_3_MODEL_B)
 	{PORT_NONE,	INDEX_NONE}	,	// 27
 	{PORT_NONE,	INDEX_NONE}	,	// 28
 	{PORT_GPIO,	28}	,	// 29

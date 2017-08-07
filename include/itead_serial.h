@@ -129,7 +129,7 @@ extern Serial_ Serial4;
 extern Serial_ Serial7;
 #elif defined (BOARD_ITEAD_CORE_EVB)
 extern Serial_ Serial4;
-#elif defined (BOARD_RASPBERRY_PI_RV2) || defined(BOARD_RASPBERRY_PI_MODEL_BPLUS)
+#elif defined (BOARD_RASPBERRY_PI_RV2) || defined(BOARD_RASPBERRY_PI_MODEL_BPLUS) || defined(BOARD_RASPBERRY_PI_3_MODEL_B)
 extern Serial_ Serial0; /* with aliase 'Serial' */
 #elif defined (BOARD_BEAGLEBONEBLACK)
 extern Serial_ Serial1;
